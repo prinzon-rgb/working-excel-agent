@@ -130,6 +130,6 @@ def transform_excel(df_a):
             )
             st.subheader("Preview of Transformed Data")
             st.dataframe(output_df)
-    except Exception as e:
-        st.error(f"An error occurred: {e}")
-        st.warning("Please ensure the uploaded file has a compatible structure.")
+        except Exception as e:
+            st.error(f"An error occurred: {e}")
+            st.warning("Please ensure the uploaded file has a compatible structure.")
